@@ -1,12 +1,12 @@
 apiVersion: kafka.strimzi.io/v1beta1
 kind: Kafka
 metadata:
-  name: kcluster
+  name: kafka-cluster
   namespace: kafka
 spec:
   kafka:
     version: 2.2.1
-    replicas: 3
+    replicas: 8
     listeners:
       plain:
         networkPolicyPeers:
@@ -39,7 +39,7 @@ spec:
       - id: 0
         class: managed-premium
         type: persistent-claim
-        size: 64Gi
+        size: 1024Gi
         deleteClaim: false
     metrics:
       # Inspired by config from Kafka 2.0.0 example rules:

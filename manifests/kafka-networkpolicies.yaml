@@ -16,7 +16,7 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      strimzi.io/name: kcluster-kafka
+      strimzi.io/name: kafka-cluster-kafka
   ingress:
   - from:
     - podSelector:
@@ -31,7 +31,7 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      strimzi.io/name: kcluster-zookeeper
+      strimzi.io/name: kafka-cluster-zookeeper
   ingress:
   - from:
     - podSelector:

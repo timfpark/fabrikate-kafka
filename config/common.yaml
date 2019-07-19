@@ -326,14 +326,14 @@ subcomponents:
         labels: {}
 
       kafkaStore:
-        overrideBootstrapServers: "PLAINTEXT://kcluster-kafka-brokers.kafka:9092"
+        overrideBootstrapServers: "PLAINTEXT://kafka-cluster-kafka-brokers.kafka:9092"
 
       kafka:
         enabled: false
 
       ingress:
         enabled: false
-        
+
       external:
         enabled: false
 
